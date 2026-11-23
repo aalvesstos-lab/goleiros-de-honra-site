@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { LOGO_SJE, LOGO_ATLETA, LOGO_LUVAS } from "@/partners";
+import { HERO_BG } from "@/hero";
 import {
   Menu, X, ArrowDown, ArrowRight, ChevronDown, ChevronLeft, ChevronRight, ShieldCheck, Target, Flame, Users,
   Hand, Dumbbell, Crosshair, Brain, Check, Camera, Quote, Phone, Mail, MapPin, AtSign, MessageCircle,
@@ -106,7 +107,7 @@ function Header() {
 /* ---------- Hero (RF-02) ---------- */
 function Hero() {
   return (
-    <section id="inicio" className="lg:min-h-[100svh] flex flex-col justify-center relative overflow-hidden hero-lines pt-24 md:pt-28 pb-10">
+    <section id="inicio" style={{ ["--hero-bg" as any]: `url(${HERO_BG})` }} className="lg:min-h-[100svh] flex flex-col justify-center relative overflow-hidden hero-lines pt-24 md:pt-28 pb-10">
       <div className={`${wrap} grid lg:grid-cols-[1.1fr_.9fr] gap-4 lg:gap-14 items-center`}>
         <div>
           <Eyebrow>Escola Goleiros de Honra · Formação de goleiros</Eyebrow>
