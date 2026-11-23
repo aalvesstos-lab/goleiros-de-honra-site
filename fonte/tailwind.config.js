@@ -14,7 +14,7 @@ module.exports = {
       },
       colors: {
         ink: "#0B0B09", card2: "#131210", panel: "#211F1C", gold: "#C8A241", "gold-dim": "#958250",
-        "gold-bright": "#E7CA74", bone: "#EFECE7", "bone-dim": "#C4BEB2", oxblood: "#592226",
+        "gold-bright": "#E7CA74", bone: "#EFECE7", "bone-dim": "#AFA99D", oxblood: "#592226",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

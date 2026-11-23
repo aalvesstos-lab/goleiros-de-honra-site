@@ -48,7 +48,7 @@ const NAV = [
 ] as const;
 
 /* ---------- peças de interface ---------- */
-const wrap = "relative mx-auto w-full max-w-[1400px] px-5 sm:px-8";
+const wrap = "relative mx-auto w-full max-w-6xl px-5 sm:px-8";
 const Eyebrow = ({ children, center = false }: { children: React.ReactNode; center?: boolean }) => (
   <p className={`font-mono text-[11px] sm:text-xs uppercase tracking-[.3em] text-gold mb-4 ${center ? "text-center" : ""}`}>{children}</p>
 );
@@ -112,9 +112,7 @@ function Hero() {
         <div>
           <Eyebrow>Escola Goleiros de Honra · Formação de goleiros</Eyebrow>
           <h1 className="font-display uppercase font-normal leading-[1.1] text-[clamp(2.3rem,5.4vw,4rem)] text-bone" style={{ textWrap: "balance" }}>
-            <span className="block">Formando goleiros</span>
-            <span className="block"><Gold>dentro e fora</Gold></span>
-            <span className="block">das quatro linhas</span>
+            Formando goleiros <Gold>dentro e fora</Gold> das quatro linhas
           </h1>
           <p className="mt-7 max-w-lg text-[17px] leading-relaxed text-bone-dim">
             Desenvolvimento técnico, disciplina, confiança e preparação especializada para goleiros de todas as categorias — com método estruturado e acompanhamento individual de cada atleta.
@@ -124,11 +122,11 @@ function Hero() {
             <a href={waLink()} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-7 py-4 border border-gold text-gold-bright font-display uppercase tracking-wide text-[15px] hover:bg-gold hover:text-ink transition-colors"><WaIcon /> Falar pelo WhatsApp</a>
           </div>
           <a href="#metodologia" className="mt-6 inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[.2em] text-bone border-b border-gold pb-1 hover:text-gold-bright">Conheça a metodologia <ArrowDown className="w-3.5 h-3.5" /></a>
-          <dl className="mt-10 pt-7 border-t border-gold-dim/30 flex gap-10 max-w-xl">
+          <dl className="mt-10 pt-7 border-t border-gold-dim/30 flex gap-10 max-w-md">
             {[["12+", "Anos de método"], ["300+", "Goleiros formados"], ["7–17", "Faixa etária"]].map(([n, l]) => (
               <div key={l}>
                 <dt className="font-display text-3xl text-gold-bright leading-none">{n}</dt>
-                <dd className="mt-2 font-mono text-[11px] uppercase tracking-[.18em] text-bone-dim">{l}</dd>
+                <dd className="mt-2 font-mono text-[10px] uppercase tracking-[.18em] text-bone-dim">{l}</dd>
               </div>
             ))}
           </dl>
@@ -139,7 +137,7 @@ function Hero() {
             <div className="absolute -inset-[6%] rounded-full opacity-30 blur-3xl bg-gold glow-pulse" aria-hidden="true" />
             <div className="absolute -inset-[11%] rounded-full border border-gold-dim/30 ring-pulse" aria-hidden="true" />
             <div className="absolute -inset-[22%] rounded-full border border-gold-dim/20 ring-pulse ring-pulse-2" aria-hidden="true" />
-            <Logo size={470} className="relative w-full h-full ring-2 ring-gold-dim/80 shadow-[0_0_70px_rgba(200,162,65,.35)]" />
+            <Logo size={470} className="relative w-full h-full shadow-[0_0_70px_rgba(200,162,65,.35)]" />
           </div>
         </div>
       </div>
